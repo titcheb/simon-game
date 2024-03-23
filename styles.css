@@ -20,9 +20,9 @@ body {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
+  height: 150px;
+  width: 150px;
+  border: 7px solid black;
   border-radius: 20%;
 }
 
@@ -89,5 +89,12 @@ body {
     margin:  5%;
     color: #FEF2BF;
   }
-  
+  .btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
 }
