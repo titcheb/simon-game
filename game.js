@@ -13,16 +13,18 @@ $(document).keypress(function (e) {
     nextSequence();
     started = true;
   }
-$("container").click(function (e){
-    if (!started) {
 
-      //3. The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
-    }
-  }
-
+});
+$("#start-game").click(function (e){
+  $("#start-game").addClass("start-game1");
+  setTimeout(() => {
+    $("#start-game").removeClass("start-game1");
+  }, 200);
+  
+    $("#start-game").text("Restart Game");
+   
+  startOver();
+  nextSequence();
 });
 $(".btn").click(function () {
 
